@@ -1,0 +1,33 @@
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Purchase!</title>
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="/css/admin.css" rel="stylesheet">
+  
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Home</a>
+           <a class="navbar-brand" href="/products">Products</a>
+          <a class="navbar-brand" href="/about">About Us</a>
+        </div>
+      </div>
+    </div>
+    <br>
+   <center>
+    <h2>Your transaction successful!</h2>
+    <h2>Your change:</h2>
+    <h1><%= @money_change[:ones] %> ones, <%= @money_change[:fives] %> fives, <%= @money_change[:tens] %> tens, <%= @money_change[:twenties] %> twenties, <%= @money_change[:fifties] %> fifties, <%= @money_change[:hundreds] %> hundreds, <%= @money_change[:five_hundreds] %> five hundreds and <%= @money_change[:thousands] %> thousands.</h1>
+    <h1>Total Change: P<%= @change %></h1>
+     <a href ="/" class="btn btn-default btn-primary">Go Back to Home Page</a>
+   </center>
+</body>
+</html>
